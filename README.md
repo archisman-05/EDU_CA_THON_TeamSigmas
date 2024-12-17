@@ -1,6 +1,6 @@
-# Ancient and Medicinal Plants
+# Ancient and Modern Medicinal Plants
 
-Welcome to the **AYUSH and Medicinal Plants** repository! This project is focused on exploring the traditional Indian medicinal systems under AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy) and their associated medicinal plants. The goal is to document, analyze, and promote the rich knowledge of India's traditional healthcare practices and plant-based remedies.
+Welcome to the **AYUSH and Modern Medicinal Plants** repository! This project is focused on exploring the traditional Indian medicinal systems under AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy) and their associated medicinal plants. The goal is to document, analyze, and promote the rich knowledge of India's traditional healthcare practices and plant-based remedies.
 
 ## Table of Contents
 - [About the Project](#about-the-project)

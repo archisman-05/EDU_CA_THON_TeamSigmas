@@ -1,6 +1,6 @@
 body {
     font-family: 'Georgia', serif;
-    background-color: #6A994E;
+    background-color: skyblue;
     color: #F2E8CF;
     margin: 0;
     padding: 0;
@@ -85,7 +85,7 @@ main {
 .animated-title {
     font-size: 5rem;
     font-weight: bold;
-    color: #F2E8CF;
+    color: #A9927D;
     animation: fadeIn 3s ease-in-out;
 }
 
@@ -135,13 +135,14 @@ main {
 }
 
 /* Tree Image */
-.tree {
+.tree{
     position: absolute;
-    bottom: 120px;
-    transform: translateX(-50%);
-    height: 470px;
-    width: 350px;
-     z-index: 10;
+    bottom: 210px;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            width: 400px; /* Larger tree size */
+            height: auto;
+            z-index: 10;
 }
 .roots {
     position: absolute;
@@ -157,4 +158,91 @@ main {
     .tree {
         width: 150px; /* Smaller tree on mobile */
     }
+}
+.sun {
+    position: absolute;
+    margin-top: 50px;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700; /* Yellow Sun */
+    border-radius: 50%;
+    box-shadow: 0 0 50px 20px rgba(255, 215, 0, 0.6);
+}
+
+/* Garden Section */
+.garden-section {
+    position: relative;
+    background-color: rgb(67, 111, 129);
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.garden-section h2 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #228B22;
+    font-size: 1.5em;
+}
+.plant-card {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #556B2F;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.plant-box {
+    width: 80px;
+    height: 80px;
+    border: 2px dotted #556B2F;
+    margin: 10px;
+    background-color: #F2E8CF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.plant {
+    width: 40px;
+    height: 40px;
+    background-color: #2E8B57;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: popPlant 0.5s ease-out forwards;
+}
+@keyframes popPlant {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.clickable-area {
+    margin: 10px;
+    background-color: #228B22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.clickable-area:hover {
+    background-color: #2E8B57;
 }

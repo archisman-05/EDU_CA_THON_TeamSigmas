@@ -1,6 +1,6 @@
 body {
     font-family: 'Georgia', serif;
-    background-color: #80B918;
+    background-color: #000000;
     color: #F2F4F3;
     margin: 0;
     padding: 0;
@@ -9,19 +9,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007F5F;
+    background-color: #386641;
     padding: 1rem 2rem;
 }
 .logo {
     display: flex;
     align-items: center;
-    color: #F2F4F3;
+    color: #F2E8CF;
     font-size: 1.5rem;
 }
 .menu-icon {
     display: none;
     font-size: 2rem;
-    color: #F2F4F3;
+    color: #F2E8CF;
     cursor: pointer;
 }
 .nav-links {
@@ -30,7 +30,7 @@ body {
     gap: 2rem;
 }
 .nav-links li a {
-    color: #F2F4F3;
+    color: #F2E8CF;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -39,7 +39,7 @@ body {
 }
 .classy{
     height: 01px;
-    background-color: #A9927D;
+    background-color: #F2E8CF;
 }
 /* Responsive Styling */
 @media (max-width: 768px) {
@@ -49,7 +49,7 @@ body {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #2B9348;
+        background-color: burlywood;
         width: 100%;
         text-align: center;
     }
@@ -88,13 +88,13 @@ main {
     border-radius: 10px;
     border: 1px solid #007F5F;
 }
-
 .catalogue-bg {
     width: 100%;
     height: 200px;
     background-size: cover;
     background-position: center;
     transition: transform 0.3s;
+    height: 260px;
 }
 
 .catalogue-item:hover .catalogue-bg {
@@ -162,5 +162,31 @@ main {
 .scrollable-catalogue::-webkit-scrollbar-thumb:hover {
     background: #5E503F;
 }
+/* Grass Section */
+.grass {
+    position: absolute;
+    bottom: 100px; /* Soil height */
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #c2b19c; /* Green for grass */
+}
 
+/* Soil Section */
+.soil {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #473C38;
+}
+.tree {
+    position: absolute;
+    bottom: 120px;
+    transform: translateX(-50%);
+    height: 470px;
+    width: 350px;
+     z-index: 10;
+}
 
